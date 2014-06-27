@@ -22,6 +22,8 @@
 		363740C5195CFBB80023BAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363740A4195CFBB80023BAF8 /* UIKit.framework */; };
 		363740CD195CFBB90023BAF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 363740CB195CFBB90023BAF8 /* InfoPlist.strings */; };
 		363740CF195CFBB90023BAF8 /* iAFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363740CE195CFBB90023BAF8 /* iAFTests.m */; };
+		363740E5195D05670023BAF8 /* UICustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = 363740E4195D05670023BAF8 /* UICustomize.m */; };
+		363740E9195D0C380023BAF8 /* FacebookConnectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 363740E8195D0C380023BAF8 /* FacebookConnectButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		363740CA195CFBB80023BAF8 /* iAFTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iAFTests-Info.plist"; sourceTree = "<group>"; };
 		363740CC195CFBB90023BAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		363740CE195CFBB90023BAF8 /* iAFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iAFTests.m; sourceTree = "<group>"; };
+		363740E3195D05670023BAF8 /* UICustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICustomize.h; path = Applications/Views/Helpers/UICustomize.h; sourceTree = "<group>"; };
+		363740E4195D05670023BAF8 /* UICustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICustomize.m; path = Applications/Views/Helpers/UICustomize.m; sourceTree = "<group>"; };
+		363740E7195D0C380023BAF8 /* FacebookConnectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookConnectButton.h; path = Applications/Views/CustomViews/FacebookConnectButton.h; sourceTree = "<group>"; };
+		363740E8195D0C380023BAF8 /* FacebookConnectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectButton.m; path = Applications/Views/CustomViews/FacebookConnectButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +120,9 @@
 		363740A6195CFBB80023BAF8 /* iAF */ = {
 			isa = PBXGroup;
 			children = (
+				363740D8195CFC030023BAF8 /* Applications */,
 				363740AF195CFBB80023BAF8 /* AppDelegate.h */,
 				363740B0195CFBB80023BAF8 /* AppDelegate.m */,
-				363740B2195CFBB80023BAF8 /* Main_iPhone.storyboard */,
-				363740B5195CFBB80023BAF8 /* Main_iPad.storyboard */,
 				363740B8195CFBB80023BAF8 /* ViewController.h */,
 				363740B9195CFBB80023BAF8 /* ViewController.m */,
 				363740BB195CFBB80023BAF8 /* Images.xcassets */,
@@ -153,6 +158,83 @@
 				363740CB195CFBB90023BAF8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		363740D8195CFC030023BAF8 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				363740DE195D02F20023BAF8 /* Resources */,
+				363740DB195CFC1F0023BAF8 /* Models */,
+				363740DA195CFC190023BAF8 /* Views */,
+				363740D9195CFC100023BAF8 /* Controllers */,
+			);
+			name = Applications;
+			sourceTree = "<group>";
+		};
+		363740D9195CFC100023BAF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				363740DC195CFEFF0023BAF8 /* BaseControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		363740DA195CFC190023BAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				363740E6195D0B4E0023BAF8 /* CustomViews */,
+				363740E2195D053C0023BAF8 /* Helpers */,
+				363740DD195CFF210023BAF8 /* BaseViewController */,
+				363740B2195CFBB80023BAF8 /* Main_iPhone.storyboard */,
+				363740B5195CFBB80023BAF8 /* Main_iPad.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		363740DB195CFC1F0023BAF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		363740DC195CFEFF0023BAF8 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseControllers;
+			sourceTree = "<group>";
+		};
+		363740DD195CFF210023BAF8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		363740DE195D02F20023BAF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		363740E2195D053C0023BAF8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				363740E3195D05670023BAF8 /* UICustomize.h */,
+				363740E4195D05670023BAF8 /* UICustomize.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		363740E6195D0B4E0023BAF8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				363740E7195D0C380023BAF8 /* FacebookConnectButton.h */,
+				363740E8195D0C380023BAF8 /* FacebookConnectButton.m */,
+			);
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +337,9 @@
 			files = (
 				363740BA195CFBB80023BAF8 /* ViewController.m in Sources */,
 				363740B1195CFBB80023BAF8 /* AppDelegate.m in Sources */,
+				363740E5195D05670023BAF8 /* UICustomize.m in Sources */,
 				363740AD195CFBB80023BAF8 /* main.m in Sources */,
+				363740E9195D0C380023BAF8 /* FacebookConnectButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
