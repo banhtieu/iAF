@@ -43,6 +43,7 @@
 		36374123195D0EC90023BAF8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374112195D0EC90023BAF8 /* UIWebView+AFNetworking.m */; };
 		36374145195D1F130023BAF8 /* FacebookLoginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374144195D1F130023BAF8 /* FacebookLoginAction.m */; };
 		36A4A22D195D60F400CE5251 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22C195D60F400CE5251 /* LoginViewController.m */; };
+		36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,8 @@
 		36374144195D1F130023BAF8 /* FacebookLoginAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookLoginAction.m; path = Applications/Features/Social/Facebook/FacebookLoginAction.m; sourceTree = "<group>"; };
 		36A4A22B195D60F400CE5251 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Applications/Controllers/Users/LoginViewController.h; sourceTree = "<group>"; };
 		36A4A22C195D60F400CE5251 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Applications/Controllers/Users/LoginViewController.m; sourceTree = "<group>"; };
+		36A4A22E195D641000CE5251 /* KeyboardHandledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardHandledViewController.h; path = Applications/Views/BaseViewController/KeyboardHandledViewController.h; sourceTree = "<group>"; };
+		36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardHandledViewController.m; path = Applications/Views/BaseViewController/KeyboardHandledViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +274,8 @@
 		363740DD195CFF210023BAF8 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				36A4A22E195D641000CE5251 /* KeyboardHandledViewController.h */,
+				36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 				363740BA195CFBB80023BAF8 /* ViewController.m in Sources */,
 				36374122195D0EC90023BAF8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				3637411A195D0EC90023BAF8 /* AFURLResponseSerialization.m in Sources */,
+				36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */,
 				363740B1195CFBB80023BAF8 /* AppDelegate.m in Sources */,
 				36374120195D0EC90023BAF8 /* UIImageView+AFNetworking.m in Sources */,
 				363740E5195D05670023BAF8 /* UICustomize.m in Sources */,

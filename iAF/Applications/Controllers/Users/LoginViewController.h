@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KeyboardHandledViewController.h"
 
-@interface LoginViewController : NSObject
+@interface LoginViewController : KeyboardHandledViewController
 
 @end
