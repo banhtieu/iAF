@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define kKeyboardPadding 20.0f
+#define kKeyboardAnimationDuration 0.25f
 
 @interface KeyboardHandledViewController : UIViewController
 

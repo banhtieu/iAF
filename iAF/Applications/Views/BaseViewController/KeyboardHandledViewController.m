@@ -58,7 +58,22 @@
         NSDictionary* info = [aNotification userInfo];
         CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
         float bottom = self.activeField.frame.origin.y + self.activeField.frame.size.height;
-        float newBound = [UIScreen mainScreen].bounds.size.height - kbSize.height;
+        
+        NSLog(@"Frame Height: %f", self.view.frame.size.height);
+        
+        float kbHeight = kbSize.height;
+        
+        if (kbHeight > kbSize.width) {
+            kbHeight = kbSize.width;
+        }
+        
+
+        NSLog(@"Keyboard height %f", kbHeight);
+        
+        float newBound = self.view.frame.size.height - kbHeight;
+        
+        NSLog(@"New Bound %f", newBound);
+        
         if (newBound < bottom)
         {
             float newBottom = newBound - kKeyboardPadding;
@@ -68,7 +83,7 @@
             rect.origin.y -= self.scrollY;
             NSLog(@"Bottom %f Scroll Y: %f", bottom, self.scrollY);
             
-            [UIView animateWithDuration:0.25f animations:^{
+            [UIView animateWithDuration:kKeyboardAnimationDuration animations:^{
                 [self.view setFrame:rect];
             }];
 
@@ -86,7 +101,7 @@
         CGRect rect = self.view.frame;
         rect.origin.y += self.scrollY;
         
-        [UIView animateWithDuration:0.25f animations:^{
+        [UIView animateWithDuration:kKeyboardAnimationDuration animations:^{
             [self.view setFrame:rect];
         }];
         
