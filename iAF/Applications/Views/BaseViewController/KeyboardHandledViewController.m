@@ -57,7 +57,19 @@
     {
         NSDictionary* info = [aNotification userInfo];
         CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-        float bottom = self.activeField.frame.origin.y + self.activeField.frame.size.height;
+        
+        float originY = 0.0f;
+        
+        UIView *view = self.activeField;
+
+        while (view != self.view && view.superview != nil)
+        {
+            originY += view.frame.origin.y;
+            NSLog(@"+ %f", view.frame.origin.y);
+            view = view.superview;
+        }
+        
+        float bottom = originY + self.activeField.frame.size.height;
         
         NSLog(@"Frame Height: %f", self.view.frame.size.height);
         
