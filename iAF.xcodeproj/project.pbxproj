@@ -44,6 +44,10 @@
 		36374145195D1F130023BAF8 /* FacebookLoginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374144195D1F130023BAF8 /* FacebookLoginAction.m */; };
 		36A4A22D195D60F400CE5251 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22C195D60F400CE5251 /* LoginViewController.m */; };
 		36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */; };
+		36AE21191961406000D9AD6E /* SidebarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21181961406000D9AD6E /* SidebarSegue.m */; };
+		36AE211F1961435F00D9AD6E /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE211E1961435F00D9AD6E /* SidebarViewController.m */; };
+		36AE21231961458900D9AD6E /* UISidebarMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21221961458900D9AD6E /* UISidebarMenuSegue.m */; };
+		36AE21261961467100D9AD6E /* UISidebarItemSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21251961467100D9AD6E /* UISidebarItemSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,14 @@
 		36A4A22C195D60F400CE5251 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Applications/Controllers/Users/LoginViewController.m; sourceTree = "<group>"; };
 		36A4A22E195D641000CE5251 /* KeyboardHandledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardHandledViewController.h; path = Applications/Views/BaseViewController/KeyboardHandledViewController.h; sourceTree = "<group>"; };
 		36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardHandledViewController.m; path = Applications/Views/BaseViewController/KeyboardHandledViewController.m; sourceTree = "<group>"; };
+		36AE21171961406000D9AD6E /* SidebarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarSegue.h; path = Applications/Views/CustomViews/Segues/SidebarSegue.h; sourceTree = "<group>"; };
+		36AE21181961406000D9AD6E /* SidebarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarSegue.m; path = Applications/Views/CustomViews/Segues/SidebarSegue.m; sourceTree = "<group>"; };
+		36AE211D1961435F00D9AD6E /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarViewController.h; path = Applications/Views/BaseViewController/SidebarViewController.h; sourceTree = "<group>"; };
+		36AE211E1961435F00D9AD6E /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarViewController.m; path = Applications/Views/BaseViewController/SidebarViewController.m; sourceTree = "<group>"; };
+		36AE21211961458900D9AD6E /* UISidebarMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISidebarMenuSegue.h; path = Applications/Views/BaseViewController/Segues/UISidebarMenuSegue.h; sourceTree = "<group>"; };
+		36AE21221961458900D9AD6E /* UISidebarMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISidebarMenuSegue.m; path = Applications/Views/BaseViewController/Segues/UISidebarMenuSegue.m; sourceTree = "<group>"; };
+		36AE21241961467100D9AD6E /* UISidebarItemSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISidebarItemSegue.h; path = Applications/Views/BaseViewController/Segues/UISidebarItemSegue.h; sourceTree = "<group>"; };
+		36AE21251961467100D9AD6E /* UISidebarItemSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISidebarItemSegue.m; path = Applications/Views/BaseViewController/Segues/UISidebarItemSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +286,11 @@
 		363740DD195CFF210023BAF8 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				36AE21201961455900D9AD6E /* Segues */,
 				36A4A22E195D641000CE5251 /* KeyboardHandledViewController.h */,
 				36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */,
+				36AE211D1961435F00D9AD6E /* SidebarViewController.h */,
+				36AE211E1961435F00D9AD6E /* SidebarViewController.m */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 		363740E6195D0B4E0023BAF8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				36AE21161961402400D9AD6E /* Segues */,
 				363740E7195D0C380023BAF8 /* FacebookConnectButton.h */,
 				363740E8195D0C380023BAF8 /* FacebookConnectButton.m */,
 			);
@@ -387,6 +403,26 @@
 				36A4A22C195D60F400CE5251 /* LoginViewController.m */,
 			);
 			name = Users;
+			sourceTree = "<group>";
+		};
+		36AE21161961402400D9AD6E /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				36AE21171961406000D9AD6E /* SidebarSegue.h */,
+				36AE21181961406000D9AD6E /* SidebarSegue.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		36AE21201961455900D9AD6E /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				36AE21211961458900D9AD6E /* UISidebarMenuSegue.h */,
+				36AE21221961458900D9AD6E /* UISidebarMenuSegue.m */,
+				36AE21241961467100D9AD6E /* UISidebarItemSegue.h */,
+				36AE21251961467100D9AD6E /* UISidebarItemSegue.m */,
+			);
+			name = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AE211F1961435F00D9AD6E /* SidebarViewController.m in Sources */,
 				36374145195D1F130023BAF8 /* FacebookLoginAction.m in Sources */,
 				36374118195D0EC90023BAF8 /* AFURLConnectionOperation.m in Sources */,
 				36374113195D0EC90023BAF8 /* AFHTTPRequestOperation.m in Sources */,
@@ -498,6 +535,7 @@
 				36A4A22D195D60F400CE5251 /* LoginViewController.m in Sources */,
 				363740BA195CFBB80023BAF8 /* ViewController.m in Sources */,
 				36374122195D0EC90023BAF8 /* UIRefreshControl+AFNetworking.m in Sources */,
+				36AE21261961467100D9AD6E /* UISidebarItemSegue.m in Sources */,
 				3637411A195D0EC90023BAF8 /* AFURLResponseSerialization.m in Sources */,
 				36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */,
 				363740B1195CFBB80023BAF8 /* AppDelegate.m in Sources */,
@@ -511,6 +549,8 @@
 				363740E9195D0C380023BAF8 /* FacebookConnectButton.m in Sources */,
 				36374115195D0EC90023BAF8 /* AFHTTPSessionManager.m in Sources */,
 				3637411D195D0EC90023BAF8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				36AE21231961458900D9AD6E /* UISidebarMenuSegue.m in Sources */,
+				36AE21191961406000D9AD6E /* SidebarSegue.m in Sources */,
 				3637411C195D0EC90023BAF8 /* AFNetworkActivityIndicatorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

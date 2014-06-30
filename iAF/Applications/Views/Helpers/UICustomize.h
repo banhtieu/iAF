@@ -15,8 +15,8 @@
 #define UIColorFromARGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(rgbValue >> 24)/255.0]
 
 #pragma mark Titlebar Customization
-#define TOP_BAR_IMAGE @"Background"
-#define TOP_BAR_TEXT_COLOR UIColorFromARGB(0xFFFFFFFF)
+//#define TOP_BAR_IMAGE @"TopBar"
+//#define TOP_BAR_TEXT_COLOR UIColorFromARGB(0xFFFFFFFF)
 
 
 @interface UICustomize : NSObject
