@@ -38,6 +38,14 @@
     [self.view addSubview:self.mainView];
     self.mainTabbarController.navigationItem.leftBarButtonItem = self.navigationItem.leftBarButtonItem;
     [self performSegueWithIdentifier:@"Main" sender:self];
+    
+    // add shadow
+    CALayer *layer = self.mainView.layer;
+    layer.shadowOffset = CGSizeMake(1, 1);
+    layer.shadowColor = [[UIColor blackColor] CGColor];
+    layer.shadowRadius = 4.0f;
+    layer.shadowOpacity = 0.80f;
+    layer.shadowPath = [[UIBezierPath bezierPathWithRect:layer.bounds] CGPath];
 }
 
 - (void) viewDidAppear:(BOOL)animated
