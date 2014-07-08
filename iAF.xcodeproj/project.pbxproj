@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36262A101962986E0046EF37 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 36262A0F1962986E0046EF37 /* DataStore.m */; };
+		36262A641962A02C0046EF37 /* TodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36262A631962A02C0046EF37 /* TodoListViewController.m */; };
+		36262A671962C7450046EF37 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 36262A661962C7450046EF37 /* Model.m */; };
+		36262A6A1962CB3E0046EF37 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 36262A691962CB3E0046EF37 /* Item.m */; };
 		363740A1195CFBB80023BAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363740A0195CFBB80023BAF8 /* Foundation.framework */; };
 		363740A3195CFBB80023BAF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363740A2195CFBB80023BAF8 /* CoreGraphics.framework */; };
 		363740A5195CFBB80023BAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363740A4195CFBB80023BAF8 /* UIKit.framework */; };
@@ -42,9 +46,9 @@
 		36374122195D0EC90023BAF8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374110195D0EC90023BAF8 /* UIRefreshControl+AFNetworking.m */; };
 		36374123195D0EC90023BAF8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374112195D0EC90023BAF8 /* UIWebView+AFNetworking.m */; };
 		36374145195D1F130023BAF8 /* FacebookLoginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 36374144195D1F130023BAF8 /* FacebookLoginAction.m */; };
+		36412F421962973100A5FA00 /* DataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36412F401962973100A5FA00 /* DataStore.xcdatamodeld */; };
 		36A4A22D195D60F400CE5251 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22C195D60F400CE5251 /* LoginViewController.m */; };
 		36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */; };
-		36AE21191961406000D9AD6E /* SidebarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21181961406000D9AD6E /* SidebarSegue.m */; };
 		36AE211F1961435F00D9AD6E /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE211E1961435F00D9AD6E /* SidebarViewController.m */; };
 		36AE21231961458900D9AD6E /* UISidebarMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21221961458900D9AD6E /* UISidebarMenuSegue.m */; };
 		36AE21261961467100D9AD6E /* UISidebarItemSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AE21251961467100D9AD6E /* UISidebarItemSegue.m */; };
@@ -61,6 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36262A0E1962986E0046EF37 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = Applications/Models/DataStore.h; sourceTree = "<group>"; };
+		36262A0F1962986E0046EF37 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = Applications/Models/DataStore.m; sourceTree = "<group>"; };
+		36262A621962A02C0046EF37 /* TodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListViewController.h; path = Applications/Controllers/CoreDataSample/TodoListViewController.h; sourceTree = "<group>"; };
+		36262A631962A02C0046EF37 /* TodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListViewController.m; path = Applications/Controllers/CoreDataSample/TodoListViewController.m; sourceTree = "<group>"; };
+		36262A651962C7450046EF37 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Applications/Models/Model.h; sourceTree = "<group>"; };
+		36262A661962C7450046EF37 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Applications/Models/Model.m; sourceTree = "<group>"; };
+		36262A681962CB3E0046EF37 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Applications/Models/Item.h; sourceTree = "<group>"; };
+		36262A691962CB3E0046EF37 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Applications/Models/Item.m; sourceTree = "<group>"; };
 		3637409D195CFBB80023BAF8 /* iAF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363740A0195CFBB80023BAF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		363740A2195CFBB80023BAF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,12 +135,11 @@
 		36374112195D0EC90023BAF8 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		36374143195D1F130023BAF8 /* FacebookLoginAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookLoginAction.h; path = Applications/Features/Social/Facebook/FacebookLoginAction.h; sourceTree = "<group>"; };
 		36374144195D1F130023BAF8 /* FacebookLoginAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookLoginAction.m; path = Applications/Features/Social/Facebook/FacebookLoginAction.m; sourceTree = "<group>"; };
+		36412F411962973100A5FA00 /* DataStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataStore.xcdatamodel; sourceTree = "<group>"; };
 		36A4A22B195D60F400CE5251 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Applications/Controllers/Users/LoginViewController.h; sourceTree = "<group>"; };
 		36A4A22C195D60F400CE5251 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Applications/Controllers/Users/LoginViewController.m; sourceTree = "<group>"; };
 		36A4A22E195D641000CE5251 /* KeyboardHandledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardHandledViewController.h; path = Applications/Views/BaseViewController/KeyboardHandledViewController.h; sourceTree = "<group>"; };
 		36A4A22F195D641000CE5251 /* KeyboardHandledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardHandledViewController.m; path = Applications/Views/BaseViewController/KeyboardHandledViewController.m; sourceTree = "<group>"; };
-		36AE21171961406000D9AD6E /* SidebarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarSegue.h; path = Applications/Views/CustomViews/Segues/SidebarSegue.h; sourceTree = "<group>"; };
-		36AE21181961406000D9AD6E /* SidebarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarSegue.m; path = Applications/Views/CustomViews/Segues/SidebarSegue.m; sourceTree = "<group>"; };
 		36AE211D1961435F00D9AD6E /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarViewController.h; path = Applications/Views/BaseViewController/SidebarViewController.h; sourceTree = "<group>"; };
 		36AE211E1961435F00D9AD6E /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarViewController.m; path = Applications/Views/BaseViewController/SidebarViewController.m; sourceTree = "<group>"; };
 		36AE21211961458900D9AD6E /* UISidebarMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISidebarMenuSegue.h; path = Applications/Views/BaseViewController/Segues/UISidebarMenuSegue.h; sourceTree = "<group>"; };
@@ -161,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36262A611962A0020046EF37 /* CoreDataSample */ = {
+			isa = PBXGroup;
+			children = (
+				36262A621962A02C0046EF37 /* TodoListViewController.h */,
+				36262A631962A02C0046EF37 /* TodoListViewController.m */,
+			);
+			name = CoreDataSample;
+			sourceTree = "<group>";
+		};
 		36374094195CFBB80023BAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +271,7 @@
 		363740D9195CFC100023BAF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				36262A611962A0020046EF37 /* CoreDataSample */,
 				36A4A22A195D60AC00CE5251 /* Users */,
 				363740DC195CFEFF0023BAF8 /* BaseControllers */,
 			);
@@ -272,6 +293,13 @@
 		363740DB195CFC1F0023BAF8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				36412F401962973100A5FA00 /* DataStore.xcdatamodeld */,
+				36262A0E1962986E0046EF37 /* DataStore.h */,
+				36262A0F1962986E0046EF37 /* DataStore.m */,
+				36262A651962C7450046EF37 /* Model.h */,
+				36262A661962C7450046EF37 /* Model.m */,
+				36262A681962CB3E0046EF37 /* Item.h */,
+				36262A691962CB3E0046EF37 /* Item.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -314,7 +342,6 @@
 		363740E6195D0B4E0023BAF8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				36AE21161961402400D9AD6E /* Segues */,
 				363740E7195D0C380023BAF8 /* FacebookConnectButton.h */,
 				363740E8195D0C380023BAF8 /* FacebookConnectButton.m */,
 			);
@@ -403,15 +430,6 @@
 				36A4A22C195D60F400CE5251 /* LoginViewController.m */,
 			);
 			name = Users;
-			sourceTree = "<group>";
-		};
-		36AE21161961402400D9AD6E /* Segues */ = {
-			isa = PBXGroup;
-			children = (
-				36AE21171961406000D9AD6E /* SidebarSegue.h */,
-				36AE21181961406000D9AD6E /* SidebarSegue.m */,
-			);
-			name = Segues;
 			sourceTree = "<group>";
 		};
 		36AE21201961455900D9AD6E /* Segues */ = {
@@ -523,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36262A671962C7450046EF37 /* Model.m in Sources */,
 				36AE211F1961435F00D9AD6E /* SidebarViewController.m in Sources */,
 				36374145195D1F130023BAF8 /* FacebookLoginAction.m in Sources */,
 				36374118195D0EC90023BAF8 /* AFURLConnectionOperation.m in Sources */,
@@ -534,7 +553,9 @@
 				36374119195D0EC90023BAF8 /* AFURLRequestSerialization.m in Sources */,
 				36A4A22D195D60F400CE5251 /* LoginViewController.m in Sources */,
 				363740BA195CFBB80023BAF8 /* ViewController.m in Sources */,
+				36262A6A1962CB3E0046EF37 /* Item.m in Sources */,
 				36374122195D0EC90023BAF8 /* UIRefreshControl+AFNetworking.m in Sources */,
+				36262A101962986E0046EF37 /* DataStore.m in Sources */,
 				36AE21261961467100D9AD6E /* UISidebarItemSegue.m in Sources */,
 				3637411A195D0EC90023BAF8 /* AFURLResponseSerialization.m in Sources */,
 				36A4A230195D641000CE5251 /* KeyboardHandledViewController.m in Sources */,
@@ -547,11 +568,12 @@
 				36374123195D0EC90023BAF8 /* UIWebView+AFNetworking.m in Sources */,
 				363740AD195CFBB80023BAF8 /* main.m in Sources */,
 				363740E9195D0C380023BAF8 /* FacebookConnectButton.m in Sources */,
+				36412F421962973100A5FA00 /* DataStore.xcdatamodeld in Sources */,
 				36374115195D0EC90023BAF8 /* AFHTTPSessionManager.m in Sources */,
 				3637411D195D0EC90023BAF8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				36AE21231961458900D9AD6E /* UISidebarMenuSegue.m in Sources */,
-				36AE21191961406000D9AD6E /* SidebarSegue.m in Sources */,
 				3637411C195D0EC90023BAF8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				36262A641962A02C0046EF37 /* TodoListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +800,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		36412F401962973100A5FA00 /* DataStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36412F411962973100A5FA00 /* DataStore.xcdatamodel */,
+			);
+			currentVersion = 36412F411962973100A5FA00 /* DataStore.xcdatamodel */;
+			name = DataStore.xcdatamodeld;
+			path = Applications/Models/DataStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 36374095195CFBB80023BAF8 /* Project object */;
 }
